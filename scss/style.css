@@ -63,7 +63,7 @@ body #date_du_jour {
 .card {
   width: 25%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(357deg, rgba(0, 0, 0, 0.2049020292) 0%, rgba(255, 255, 255, 0.2077031496) 100%);
+  background: linear-gradient(357deg, rgba(0, 0, 0, 0.2049020292) 20%, rgba(255, 255, 255, 0.2077031496) 100%);
   box-shadow: 0.5rem 0.5rem 3rem gray;
   margin-bottom: 5rem;
 }
@@ -116,6 +116,10 @@ button {
   font-size: 1.5rem;
   margin: 1rem;
   text-align: center;
+}
+button:hover {
+  background-color: red;
+  transition: ease 0.6s;
 }
 
 @media (max-width: 1000px) {

@@ -7,5 +7,9 @@
 
 @mixin fond-gradient {
     background: rgb(0,0,0);
-    background: linear-gradient(357deg, rgba(0,0,0,0.2049020291710434) 0%, rgba(255,255,255,0.20770314961922265) 100%); 
+    background: linear-gradient(357deg, rgba(0,0,0,0.2049020291710434) 20%, rgba(255,255,255,0.20770314961922265) 100%); 
+}
+
+@mixin triangle($direction, $white, $size: 0.5rem, $position: relative){
+    
 }

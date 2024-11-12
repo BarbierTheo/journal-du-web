@@ -125,7 +125,17 @@ button {
     font-size: 1.5rem;
     margin: 1rem;
     text-align: center;
+
+    #triangle{
+        @include triangle("down", $black, 0.5rem, relative);
+    }
 }
+
+button:hover{
+    background-color: $red;
+    transition: ease 0.6s;
+}
+
 
 @media(max-width: 1000px) {
 
