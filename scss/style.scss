@@ -70,7 +70,7 @@ body {
 
 .card {
     width: 25%;
-    background-color: none;
+    @include fond-gradient;
     box-shadow: 0.5rem 0.5rem 3rem gray;
 
     h3 {
@@ -91,6 +91,7 @@ body {
 
         .photo-card {
             height: auto;
+            box-sizing: border-box;
         }
 
         .text-box {
@@ -108,6 +109,8 @@ body {
         text-justify: inter-word;
     }
 
+    margin-bottom: 5rem;
+
 }
 
 hr {
@@ -122,4 +125,34 @@ button {
     font-size: 1.5rem;
     margin: 1rem;
     text-align: center;
+}
+
+@media(max-width: 1000px) {
+
+    #logo{
+    float: none;
+    text-align: center;
+
+    }
+
+    #title-flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 98%;
+        text-align: center;
+        margin: 0.2rem;
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            width: 80%;
+        }
+    }
+
 }
