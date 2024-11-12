@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/fond.webp);
+}
+
+body > span {
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  float: right;
+  font-family: alfa slab one, sans-serif;
+}
+
+#logo {
+  float: left;
+}
+#logo img {
+  width: 40%;
+}
+
+.clear {
+  clear: both;
+}
+
+#title-flex {
+  display: flex;
+  flex-direction: column;
+  font-family: alfa slab one, sans-serif;
+  width: 60%;
+}
+#title-flex h1 span {
+  color: gray;
+}
+#title-flex h2 {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.container {
+  clear: both;
+}/*# sourceMappingURL=style.css.map */

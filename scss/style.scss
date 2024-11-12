@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "typo";
+@import "couleurs";
+@import "mixins";
+
+body {
+    background-image: url(../img/fond.webp);
+
+    >span {
+        float: right;
+        font-family: alfa-slab-one;
+        background-color: $black;
+        color: $white;
+        padding: 1rem;
+    }
+
+    h1 {
+        span {
+            color: $gray;
+        }
+    }
+
+    h2 {
+        @include bords;
+        padding: 1.2rem;
+    }
+
+    #date_du_jour {
+        color: $gray;
+    }
+}
+
+#logo {
+    float: left;
+
+    img {
+        width: 10rem;
+    }
+
+    margin-right: 2rem;
+    margin-left: 0.8rem;
+}
+
+.clear {
+    clear: both;
+}
+
+
+#title-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    justify-content: center;
+    width: 80%;
+    font-family: alfa-slab-one;
+}
+
+
+.container {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.card {
+    width: 25%;
+    background-color: none;
+    box-shadow: 0.5rem 0.5rem 3rem gray;
+
+    h3 {
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        @include bords;
+    }
+
+    .box {
+        float: inline-start;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        width: 12rem;
+
+
+        .photo-card {
+            height: auto;
+        }
+
+        .text-box {
+            font-family: alfa-slab-one;
+            color: $white;
+            background-color: $red;
+            text-align: center;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+}
+
+hr {
+    margin: 1rem
+}
+
+button {
+    border-style: none;
+    @include bords;
+    width: 40%;
+    font-family: alfa slab one;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}

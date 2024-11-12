@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "alfa-slab-one";
+  src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+body {
+  background-image: url(../img/fond.webp);
+}
+body > span {
+  float: right;
+  font-family: alfa-slab-one;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+body h1 span {
+  color: gray;
+}
+body h2 {
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  padding: 1.2rem;
+}
+body #date_du_jour {
+  color: gray;
+}
+
+#logo {
+  float: left;
+  margin-right: 2rem;
+  margin-left: 0.8rem;
+}
+#logo img {
+  width: 10rem;
+}
+
+.clear {
+  clear: both;
+}
+
+#title-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  justify-content: center;
+  width: 80%;
+  font-family: alfa-slab-one;
+}
+
+.container {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  width: 25%;
+  background-color: none;
+  box-shadow: 0.5rem 0.5rem 3rem gray;
+}
+.card h3 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+}
+.card .box {
+  float: inline-start;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  width: 12rem;
+}
+.card .box .photo-card {
+  height: auto;
+}
+.card .box .text-box {
+  font-family: alfa-slab-one;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+.card p {
+  font-size: 1.3rem;
+  margin: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+hr {
+  margin: 1rem;
+}
+
+button {
+  border-style: none;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  width: 40%;
+  font-family: alfa slab one;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
