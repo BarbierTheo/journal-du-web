@@ -3,23 +3,41 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "alfa-slab-one";
+  src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
 body {
   background-image: url(../img/fond.webp);
 }
-
 body > span {
-  background-color: black;
-  padding: 1rem;
-  color: white;
   float: right;
-  font-family: alfa slab one, sans-serif;
+  font-family: alfa-slab-one;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+body h1 span {
+  color: gray;
+}
+body h2 {
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  padding: 1.2rem;
+}
+body #date_du_jour {
+  color: gray;
 }
 
 #logo {
   float: left;
+  margin-right: 2rem;
+  margin-left: 0.8rem;
 }
 #logo img {
-  width: 40%;
+  width: 10rem;
 }
 
 .clear {
@@ -29,19 +47,100 @@ body > span {
 #title-flex {
   display: flex;
   flex-direction: column;
-  font-family: alfa slab one, sans-serif;
-  width: 60%;
-}
-#title-flex h1 span {
-  color: gray;
-}
-#title-flex h2 {
-  color: white;
-  background-color: black;
-  padding: 1rem;
-  border-radius: 1rem;
+  gap: 1.1rem;
+  justify-content: center;
+  width: 80%;
+  font-family: alfa-slab-one;
 }
 
 .container {
   clear: both;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.container .card {
+  width: 25%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(357deg, rgba(0, 0, 0, 0.2049020292) 20%, rgba(255, 255, 255, 0.2077031496) 100%);
+  box-shadow: 0.5rem 0.5rem 3rem gray;
+  margin-bottom: 5rem;
+}
+.container .card h3 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+}
+.container .card .box {
+  float: inline-start;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  width: 12rem;
+}
+.container .card .box .photo-card {
+  height: auto;
+  box-sizing: border-box;
+}
+.container .card .box .text-box {
+  font-family: alfa-slab-one;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+.container .card p {
+  font-size: 1.3rem;
+  margin: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+hr {
+  margin: 1rem;
+}
+
+button {
+  border-style: none;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  width: 40%;
+  font-family: alfa slab one;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: red;
+  transition: ease 0.6s;
+}
+
+@media (max-width: 1000px) {
+  #logo {
+    float: none;
+    text-align: center;
+  }
+  #title-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 98%;
+    text-align: center;
+    margin: 0.2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card {
+    width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */
