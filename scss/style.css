@@ -59,15 +59,14 @@ body #date_du_jour {
   justify-content: center;
   gap: 2rem;
 }
-
-.card {
+.container .card {
   width: 25%;
   background: rgb(0, 0, 0);
   background: linear-gradient(357deg, rgba(0, 0, 0, 0.2049020292) 20%, rgba(255, 255, 255, 0.2077031496) 100%);
   box-shadow: 0.5rem 0.5rem 3rem gray;
   margin-bottom: 5rem;
 }
-.card h3 {
+.container .card h3 {
   margin: 1rem;
   text-align: center;
   font-size: 1.5rem;
@@ -77,24 +76,24 @@ body #date_du_jour {
   background-color: black;
   padding: 0.5rem;
 }
-.card .box {
+.container .card .box {
   float: inline-start;
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
   width: 12rem;
 }
-.card .box .photo-card {
+.container .card .box .photo-card {
   height: auto;
   box-sizing: border-box;
 }
-.card .box .text-box {
+.container .card .box .text-box {
   font-family: alfa-slab-one;
   color: white;
   background-color: red;
   text-align: center;
 }
-.card p {
+.container .card p {
   font-size: 1.3rem;
   margin: 1rem;
   text-align: justify;
@@ -117,6 +116,7 @@ button {
   margin: 1rem;
   text-align: center;
 }
+
 button:hover {
   background-color: red;
   transition: ease 0.6s;
